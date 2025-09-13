@@ -5,12 +5,12 @@ class GraficoCola:
         self.ruta_base = ruta_base  # sin extensión
 
     def generar_grafo(self, historial):
-        dot = Digraph(comment='Demora por paciente')
+        dot = Digraph(comment='Espera por paciente')
         dot.attr(rankdir='LR')  # Horizontal
         dot.attr('node', shape='box')  # Cuadros
 
         for i, (nombre, especialidad, entrada, espera, atencion, total) in enumerate(historial):
-            etiqueta = f"{nombre}\n{especialidad}\nDemora total: {total} min"
+            etiqueta = f"{nombre}\n{especialidad}\nTiempo total: {total} min"
             dot.node(nombre, etiqueta)
 
             if i < len(historial) - 1:
