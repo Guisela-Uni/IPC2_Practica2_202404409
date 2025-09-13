@@ -1,0 +1,16 @@
+// Cola de pacientes
+digraph {
+	rankdir=LR
+	node [shape=box]
+	isaac [label="isaac
+Pediatria
+Espera: 0 min"]
+	isaac -> nahomi
+	nahomi [label="nahomi
+Detmatologia
+Espera: 15 min"]
+	nahomi -> juan
+	juan [label="juan
+Medicina General
+Espera: 40 min"]
+}

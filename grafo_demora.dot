@@ -1,0 +1,8 @@
+// Demora por paciente
+digraph {
+	rankdir=LR
+	node [shape=box]
+	Mishel [label="Mishel
+Medicina General
+Demora total: 10 min"]
+}
